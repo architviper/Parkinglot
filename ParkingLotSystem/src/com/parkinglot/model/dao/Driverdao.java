@@ -34,8 +34,12 @@ public class Driverdao {
 		driver.parkinglot.add(new Parkinglot("Google", "Gurgaon"));
 		
 		for(int i =0 ; i < driver.parkinglot.size(); i++){
-			driver.parkinglot.get(i).addFloor("A"+i, i, true);
+			for(int j =0 ; j < 5; j++){
+				driver.parkinglot.get(i).addFloor("A"+j, j, true);
+			}
+			
 		}
+		//driver.parkinglot.get(0).getParkingfloor().get(0).addSpot(name, isfree, status, type);
 		
 		
 	}
